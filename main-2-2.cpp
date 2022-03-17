@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-2-2.cpp"
+// #include "function-2-2.cpp"
 using namespace std;
 
 extern int binary_to_number(int [], int);
