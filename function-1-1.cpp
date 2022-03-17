@@ -7,7 +7,7 @@ void printer(int array[10][10]){
             if(column != 10){
             cout << array[row][column] << " ";
             }
-            else if(column == 10){
+            else{
                 cout << array[row][column] << endl;
             }
         }
