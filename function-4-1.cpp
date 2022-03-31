@@ -2,7 +2,7 @@
 
 ModCounter::ModCounter(int bound,int init){
     boundary = bound;
-    if(0 < init <= boundary){
+    if(0 < init && init <= boundary){
         current_val = init;
     }
     else{
