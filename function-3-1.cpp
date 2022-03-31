@@ -8,6 +8,9 @@ bool more_positive(int vals[], int length){
         if(vals[i] > 0){
             positive_counter += 1;
         }
+        else if(vals[i]==0){
+            continue;
+        }
         else{
             negative_counter += 1;
         }
