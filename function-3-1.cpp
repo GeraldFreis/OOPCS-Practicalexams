@@ -10,7 +10,7 @@ bool more_positive(int vals[], int length){
         }
         else if(vals[i]==0){
             continue;
-        }
+        } //makes sense
         else{
             negative_counter += 1;
         }
