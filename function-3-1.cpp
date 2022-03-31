@@ -12,7 +12,11 @@ bool more_positive(int vals[], int length){
             positive_counter += 1;
         }
     }
-    if(negative_counter > positive_counter){return false;}
-    else{return true;}
+    if(negative_counter > positive_counter){
+        return false;
+    }
+    else{
+        return true;
+    }
 
 }
