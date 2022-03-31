@@ -14,8 +14,8 @@ int main(){
         cout << "vals is more positive" << endl;
     }
     
-    int values[]={-1,-1, 1};
-    int values_length=3;
+    int values[]={-1,-1, 1, 2, 4};
+    int values_length=5;
     bool result=more_positive(values,values_length);
     if(result == false){
         cout << "vals is not more positive" << endl;
