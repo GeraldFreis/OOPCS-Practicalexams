@@ -12,7 +12,11 @@ int main(){
     int values[]={-1,-1, 1};
     int values_length=3;
     bool result=more_positive(values,values_length);
-    cout << result << endl;
-
+    if(result == false){
+        cout << "vals is not more positive" << endl;
+    }
+    else{
+        cout << "vals is more positive" << endl;
+    }
     return 0;
 }

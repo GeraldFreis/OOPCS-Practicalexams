@@ -9,7 +9,7 @@ string get_phase(int temp){
         return "liquid";
     }
     else if(373 < temp && temp <= 4700){
-        return "liquid";
+        return "gas";
     }
     else{
         return "decomposed";
