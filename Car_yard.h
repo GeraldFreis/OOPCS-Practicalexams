@@ -2,6 +2,18 @@
 #include <iostream>
 using std::cout; using std::string;
 
+/*
+Car yard has the attrs:
+    capacity, code and cararray:
+        cararray is an array of Car objects from the Car class
+
+Car yard has behaviours:
+    Default and parameterized constructors
+    get_total_stock_count {returns number of cars in the yard}
+    get_stock_quantity {returns number of cars with a code equal to the formal parameter passed in}
+    get_current_stock_list {returns raw pointer to the car array}
+    add_stock {adds a car to the car array if there is space}
+*/
 class Car_yard{
     protected:
         int capacity;

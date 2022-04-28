@@ -3,6 +3,16 @@ using std::cout; using std::string;
 #ifndef CAR_H
 #define CAR_H
 
+
+/*
+Car has the attrs:
+    brand and code
+behaviours:
+    Parameterized and default constructor
+    get_brand {returns the brand}
+    get_code {returns the code}
+    destructor {destructor is useless}
+*/
 class Car{
     protected:
         string brand;
