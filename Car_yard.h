@@ -13,6 +13,10 @@ Car yard has behaviours:
     get_stock_quantity {returns number of cars with a code equal to the formal parameter passed in}
     get_current_stock_list {returns raw pointer to the car array}
     add_stock {adds a car to the car array if there is space}
+
+Use:
+    Car yard can be used to initialise a given array of car objects, can store their details based upon
+    the get methods of the original car class
 */
 class Car_yard{
     protected:
