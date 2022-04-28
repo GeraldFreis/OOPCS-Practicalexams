@@ -4,7 +4,7 @@ using std::cout; using std::string;
 
 int main(){
     Car_yard yard(3);
-    Car car("name",0);
+    Car car("name", 0);
     Car car2("toy", 12);
     Car car3("Minicooper", 1313);
     Car car4("micro", 129);
