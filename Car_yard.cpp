@@ -10,7 +10,7 @@ Car_yard::Car_yard(int _capacity){ // constructor for yard that can hold "capaci
 }
 int Car_yard::get_total_stock_count(){ // count of the current number of cars in yard
     int counter = 0;
-    for(int i = 0; i < capacity-1; i++){
+    for(int i = 0; i < capacity; i++){
         if(cararray[i].get_brand()!="" && cararray[i].get_code()!=0){
             counter += 1;
         }
@@ -35,7 +35,7 @@ Car *Car_yard::get_current_stock_list(){ // gets an array containing all the car
 bool Car_yard::add_stock(Car c){ // tries to add car to yard if there is enough spare capacity to fit it
                          // then will return true. 
     if(cararray[capacity-1].get_brand() == "" && cararray[capacity-1].get_code()==0){
-        for(int i =0; i < capacity-1; i++){
+        for(int i =0; i < capacity; i++){
             if(cararray[i].get_brand()=="" && cararray[i].get_code()==0){
                 cararray[i] = c;
                 return true;
