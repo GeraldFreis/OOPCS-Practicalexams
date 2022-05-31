@@ -14,7 +14,7 @@ char player::getMove(){
 bool player::win(player * opponent){
     if(opponent->getMove() == 's' && past_moves[move_number] == 's'){
         cout << "draw! go again" << "\n";
-        return NULL;
+        return false;
     }
     else if (opponent->getMove() == 'r' && past_moves[move_number] == 's'){
         return false;
@@ -39,3 +39,4 @@ bool player::win(player * opponent){
         return true;
     }
 }
+

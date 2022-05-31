@@ -22,7 +22,6 @@ class player {
         virtual string getMoves() = 0;
         char getMove();
         bool win(player * opponent);
-        ~player();
 };
 
 #endif
