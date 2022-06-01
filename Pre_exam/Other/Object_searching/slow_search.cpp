@@ -28,6 +28,24 @@ How:
     - rmv [1] < rmv[0] {false so we dont do anything}
     As both are false it is sorted
 */
-Animal **sorted_animals(Animal **array, int len, int left, int right){
+Animal *sorted_animals(Animal *array, int len, int left, int right){
+    if(array[left].get_id() < array[left+1].get_id() && array[right].get_id() > array[right-1].get_id() || left == len - 1){
+        return array;
+    }
+    else{
+        if(array[left].get_id() > array[left+1].get_id()){
+            Animal temp = array[left+1];
+            array[left+1] = array[left];
+            array[left] = temp; 
+        }
+        if(array[right].get_id() < array[right-1].get_id()){
+            Animal temp = array[right-1];
+            array[right-1] = array[right];
+            array[right] = temp; 
+        }
 
+        int current_left = left;
+        int current_right = right;
+        Animal * array = sorted_animals(array, len, current_left + 1, current_right - 1);
+    }
 }
