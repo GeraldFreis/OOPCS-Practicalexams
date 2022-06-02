@@ -8,9 +8,8 @@ if greater we test if array is ascending, if not we do the same thing again
 animal **sorted_animals(animal **given_herd, int len){
     bool sorted = false;
     while(sorted == false){
-        int rand_index = 1 + rand() % len;
-
-        if(given_herd[rand_index]->get_animalID() < given_herd[rand_index-1]->get_animalID()){ // if less than
+        int rand_index = 1+ rand() % (len-1);
+        if(given_herd[rand_index]->get_animalID() < given_herd[rand_index-1]->get_animalID() ){ // if less than
             swap(given_herd[rand_index], given_herd[rand_index-1]);
         }
 
@@ -56,6 +55,4 @@ int main(){
     for(int i = 0; i < 4; i++){
         cout << herd[i]->get_animalID() << " ";
     }
-    
-
 }
