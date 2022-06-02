@@ -21,7 +21,7 @@ class Dymocks: public BookStore{
         void set_isOnline(bool o){isOnline = o;}
         void set_nextNumStores(int val){nextNumStores = val;}
                     
-    private:
+    protected:
         int storeID;          // unique store ID 
         bool isOnline;       // class attribute  
         static int nextNumStores;            
