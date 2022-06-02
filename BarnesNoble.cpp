@@ -10,6 +10,8 @@ BarnesNoble::BarnesNoble(string n){  // set name n
 }
 
 void BarnesNoble::soldBook(){   // increments numSoldBooks
-    
+    numSoldBooks++;
 }
-int BarnesNoble::get_numSoldBooks(); // returns the books sold
+int BarnesNoble::get_numSoldBooks(){ // returns the books sold
+    return numSoldBooks;
+}
