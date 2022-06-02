@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Bookstore.h"
+#include "BookStore.h"
 using namespace std;
 
 #ifndef DYMOCKS_H
@@ -12,7 +12,7 @@ class Dymocks: public BookStore{
                             // calls the parent class constructor with name=="Dymocks" and numBook==1000 and
                             // and address equal to the empty string
         float get_onlineTax();
-        
+
         static int get_nextNumStores(){return nextNumStores;}
         bool get_isOnline(){return isOnline;}
         int get_storeID(){return storeID;}
