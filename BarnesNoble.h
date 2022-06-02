@@ -1,11 +1,11 @@
 #include <iostream>
-#include "BookStore.h"
+#include "Dymocks.h"
 using namespace std;
 
 #ifndef BARNESNOBLE_H
 #define BARNESNOBLE_H
 
-class BarnesNoble: public BookStore {
+class BarnesNoble: public Dymocks{
     public:
         BarnesNoble();          // inherit from base class default constructor    
         BarnesNoble(string n);  // set name n  

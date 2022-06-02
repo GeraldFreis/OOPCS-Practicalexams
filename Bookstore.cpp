@@ -1,4 +1,4 @@
-#include "Bookstore.h"
+#include "BookStore.h"
 
 BookStore::BookStore(string n, string a, int b){   // creates a BookStore name n, address a, and number of books in the store b
     name = n;
