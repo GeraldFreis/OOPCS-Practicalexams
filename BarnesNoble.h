@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Bookstore.h"
+#include "BookStore.h"
 using namespace std;
 
 #ifndef BARNESNOBLE_H
@@ -14,7 +14,7 @@ class BarnesNoble: public BookStore {
         
         void soldBook();   // increments numSoldBooks
         int get_numSoldBooks(); // returns the books sold
-        
+
     private:
         int numSoldBooks;   // attribute for numSoldBooks, initialised to 0
 
